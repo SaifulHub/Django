@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+# home screen views function importing.
+from personal.views import home_sreen_view  
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',home_sreen_view),
 ]
